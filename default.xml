@@ -65,7 +65,7 @@
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="jellybean" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
-  <project path="external/chromium" name="platform/external/chromium" remote="linaro" revision="linaro_android_4.1.1" />
+  <project path="external/chromium" name="platform_external_chromium" remote="linaro" revision="linaro_android_4.1.1" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
   <project path="external/clang" name="platform_external_clang" remote="linaro" revision="linaro_android_4.1.1" />
@@ -73,22 +73,22 @@
   <project path="external/dbus" name="platform/external/dbus" />
   <project path="external/dexmaker" name="platform/external/dexmaker" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" remote="linaro" revision="linaro_android_4.1.1" />
+  <project path="external/dnsmasq" name="platform_external_dnsmasq" remote="linaro" revision="linaro_android_4.1.1" />
   <project path="external/doclava" name="platform/external/doclava" />
   <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" remote="linaro" revision="linaro_android_4.1.1" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="linaro" revision="linaro_android_4.1.1" />
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
-  <project path="external/embunit" name="platform/external/embunit" />
+  <project path="external/elfutils" name="platform_external_elfutils" remote="linaro" revision="linaro_android_4.1.1" />
+  <project path="external/embunit" name="platform_external_embunit" remote="linaro" revision="linaro_android_4.1.1" />
   <project path="external/emma" name="platform/external/emma" />
   <project path="external/esd" name="platform/external/esd" />
   <project path="external/expat" name="platform/external/expat" />
   <project path="external/eyes-free" name="platform/external/eyes-free" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform/external/flac" />
-  <project path="external/freetype" name="platform_external_freetype" remote="vanir" revision="jb" />
+  <project path="external/freetype" name="platform_external_freetype" remote="vanir" revision="linaro" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
   <project path="external/ganymed-ssh2" name="platform/external/ganymed-ssh2" />
   <project path="external/gcc-demangle" name="platform/external/gcc-demangle" />
@@ -101,7 +101,7 @@
   <project path="external/hamcrest" name="platform/external/hamcrest" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/hyphenation" name="platform/external/hyphenation" />
-  <project path="external/icu4c" name="platform/external/icu4c" />
+  <project path="external/icu4c" name="platform_external_icu4c" remote="vanir" revision="linaro" />
   <project path="external/iproute2" name="platform/external/iproute2" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
   <project path="external/iptables" name="platform/external/iptables" />
