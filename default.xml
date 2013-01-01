@@ -246,9 +246,6 @@
   <project name="platform/frameworks/rs" path="frameworks/rs" revision="4da03cd0680db634a80f98697e5473597cb6c828" upstream="linaro_android_4.2.1"/>
   <project name="platform/frameworks/support" path="frameworks/support" revision="e6360c9b21258e1c85b6cef02c0c0bc5cd991653" upstream="linaro_android_4.2.1"/>
   <project path="frameworks/testing" name="platform/frameworks/testing" />
-  <project name="platform/frameworks/rs" path="frameworks/rs" revision="4da03cd0680db634a80f98697e5473597cb6c828" upstream="linaro_android_4.2.1"/>
-  <project name="platform/frameworks/support" path="frameworks/support" revision="e6360c9b21258e1c85b6cef02c0c0bc5cd991653" upstream="linaro_android_4.2.1"/>
-  <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="8235fc7211ba2f89e3da327824f6cb0a57e0ef27" upstream="linaro_android_4.2.1"/>
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
