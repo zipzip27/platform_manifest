@@ -299,7 +299,7 @@
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
-  <project name="platform_packages_input_LatinIME" path="packages/inputmethods/LatinIME" remote="vanir" revision="linaro421-WIP" />
+  <project name="packages_input_LatinIME" path="packages/inputmethods/LatinIME" remote="vanir" revision="linaro421-WIP" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
