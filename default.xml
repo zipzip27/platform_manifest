@@ -259,7 +259,7 @@
   <project name="platform/hardware/samsung/origen/ump" path="hardware/samsung/origen/ump" revision="02c4f7f1b6666f57ca99e921c3c30311d5571648" upstream="linaro_android_jb"/>
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_hardware_ti_omap4xxx" path="hardware/ti/omap4xxx" remote="vanir" revision="linaro421-WIP" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
   <project name="platform/libcore" path="libcore" revision="9552daa50e5f6908a6a80441d8c1cf5c0e01c5fc" upstream="linaro_android_4.2.1"/>
