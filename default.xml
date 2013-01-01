@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote name="vanir"
           fetch="git://github.com/VanirAOSP/"
           review="vaniraosp.goo.im" />
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
-  <remote name="aokp"
-          fetch="git://github.com/"
-          review="gerrit.sudoservers.com" />
+  <remote fetch="git://android.git.linaro.org/" name="aosp" review="review.android.git.linaro.org"/>
+  <remote fetch="https://android-review.googlesource.com/" name="aosp-upstream" review="https://android-review.googlesource.com/"/>
+  <remote fetch="git://git.linaro.org/" name="linaro-other"/>
+  <remote fetch="git://github.com/zyga/" name="zyga"/>
   <remote name="cm"
           fetch="https://github.com/CyanogenMod/"
           review="review.cyanogenmod.com" />
   <remote name="fnv"
           fetch="git://github.com/FruitsAndVeggies/" />
+  
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+  
+  <!-- BEGIN LINARO VOODOO -->
+  <project name="arm/ds5/gator" path="external/gator" remote="linaro-other" revision="197f43d9c9c94dec5f05cb93047d9d10f7915265" upstream="android"/>
+  <project name="boot/u-boot-linaro-stable" path="u-boot" remote="linaro-other" revision="102afa29de951a2aca93e75fa84d596c92634d05" upstream="master"/>  
+  <project name="device/ti/proprietary-open" revision="124f4b454c5fd8fd1a04b18043f6d698f617fd83" upstream="ics"/>
+  <project name="device/ti/uim" revision="20f65b810f78dd6a74ddef1aaf8e6cb5c69be9d8" upstream="android"/>
+  <project name="hardware/linaro/common" revision="5e02e26d4f6de4b95d757a5fdfbb890beb308483" upstream="linaro_android_jb"/>
+  <project name="kernel/omap" path="kernel" revision="d5a18e013da25a07b330fd70c212ac477cabff4e"/>
+  <project name="lava-blackbox" path="external/lava-blackbox" remote="zyga" revision="817376ec14e2a132dc77231d6fb29eb3b2142ec1" upstream="master"/>
+  <project name="people/afrantzis/glmark2" path="packages/apps/glmark2" remote="linaro-other" revision="b55bf8442bb7e13787e1e47411bf4d61691c7686" upstream="master"/>
+  <project name="people/kejunzhou/tools_for_pm-qa" path="external/tools_for_pm-qa" remote="linaro-other" revision="32d84d016ce1a89b591ae058c2a31c245ecb6a3b" upstream="master"/>
+  <project name="people/tomgall/libjpeg-turbo/libjpeg-turbo" path="external/jpeg" remote="linaro-other" revision="52969c9b2cf9db0162bc1c1e9b9f27bd362908ba" upstream="android"/>
+  <!-- END LINARO VOODOO -->
 
-  <project path="manifest" name="platform_manifest" remote="vanir" revision="jb42" />
-  <project path="build" name="platform_build" remote="vanir" revision="jb42">
-    <copyfile src="core/root.mk" dest="Makefile" />
+  <!-- BEGIN NUCLEAR VOODOO -->
+  <project path="manifest" name="platform_manifest" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform/build" path="build" remote="vanir" revision="linaro421-WIP" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform_bionic" remote="vanir" revision="jb42" />
+  <project name="platform/bionic" path="bionic" remote="vanir" revision="linaro421-WIP" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="platform_dalvik" remote="vanir" revision="jb42" />
-  <project path="development" name="platform/development" />
-  <project path="device/asus/grouper" name="platform_device_asus_grouper" remote="vanir" revision="jb42" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device" />
+  <project name="platform/dalvik" path="dalvik" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform/development" path="development" revision="be095b40b1e9cb567af641e524576c8ae937ead7" upstream="linaro_android_4.2.1"/>
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />
   <project path="device/generic/armv7-a" name="device/generic/armv7-a" />
@@ -41,15 +51,13 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
-  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
-  <project path="device/samsung/maguro" name="platform_device_samsung_maguro" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
-  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/tuna" name="platform_device_samsung_tuna" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/ti/panda" name="device/ti/panda" groups="device" />
+  <project groups="device" name="device/samsung/maguro" remote="vanir" revision="linaro421-WIP" />
+  <project groups="device" name="device/samsung/toro" remote="vanir" revision="linaro421-WIP" />
+  <project groups="device" name="device/samsung/tuna" remote="vanir" revision="linaro421-WIP" />
+  <project name="device/ti/proprietary-open" revision="124f4b454c5fd8fd1a04b18043f6d698f617fd83" upstream="ics"/>
+  <project name="device/ti/uim" revision="20f65b810f78dd6a74ddef1aaf8e6cb5c69be9d8" upstream="android"/>
+  <project name="hardware/linaro/common" revision="linaro_android_jb" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -71,7 +79,7 @@
   <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-10.1" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
-  <project path="external/chromium" name="platform_external_chromium" remote="vanir" revision="jb42" />
+  <project name="platform/external/chromium" path="external/chromium" revision="6c05ecefa21154c1916a4af4e40fb1045ccaeb52" upstream="linaro_android_4.2.1"/>
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
   <project path="external/clang" name="platform/external/clang" />
@@ -86,8 +94,8 @@
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
-  <project path="external/embunit" name="platform/external/embunit" />
+  <project name="platform/external/elfutils" path="external/elfutils" revision="89491766692ba1e5acd0eb389b602233e876ee09" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/embunit" path="external/embunit" revision="9265a3300d4b2f1e4964358139248e75e60e9b8f" upstream="linaro_android_4.2.1"/>
   <project path="external/emma" name="platform/external/emma" />
   <project path="external/esd" name="platform/external/esd" />
   <project path="external/expat" name="platform/external/expat" />
@@ -95,7 +103,7 @@
   <project path="external/fat32lib" name="platform/external/fat32lib" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform/external/flac" />
-  <project path="external/freetype" name="platform_external_freetype" remote="vanir" revision="jb42" />
+  <project name="platform/external/freetype" path="external/freetype" revision="02e897145035a0613908ef735cdbe87b5e4405b3" upstream="linaro_android_4.2.1"/>
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
   <project path="external/ganymed-ssh2" name="platform/external/ganymed-ssh2" />
   <project path="external/gcc-demangle" name="platform/external/gcc-demangle" />
@@ -104,7 +112,7 @@
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" />
   <project path="external/grub" name="platform/external/grub" />
   <project path="external/gtest" name="platform/external/gtest" />
-  <project path="external/guava" name="android_external_guava" remote="vanir" revision="jb42" />
+  <project name="platform/external/guava" path="external/guava" revision="515370823799decea74751ff3a78b80e44e71219" upstream="linaro_android_4.2.1"/>
   <project path="external/hamcrest" name="platform/external/hamcrest" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/htop" name="android_external_htop" remote="cm" revision="cm-10.1" />
@@ -133,6 +141,7 @@
   <project path="external/libncurses" name="android_external_libncurses" remote="cm" revision="cm-10.1" />
   <project path="external/libnfc-nci" name="platform/external/libnfc-nci" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
+  <project name="platform/external/libnl" path="external/libnl" revision="bbcb553f0f4636dd40e84d320a576b3de7b95357" upstream="linaro"/>
   <project path="external/libnl-headers" name="platform/external/libnl-headers" />
   <project path="external/libogg" name="platform/external/libogg" />
   <project path="external/libpcap" name="platform/external/libpcap" />
@@ -148,7 +157,7 @@
   <project path="external/libxml2" name="platform/external/libxml2" />
   <project path="external/libxslt" name="platform/external/libxslt" />
   <project path="external/libyuv" name="platform/external/libyuv" />
-  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
+  <project name="platform/external/linux-tools-perf" path="external/linux-tools-perf" revision="8d452eb3c1672d451bfa213e7d4a4bf2398d07b6" upstream="linaro_android_4.2.1"/>
   <project path="external/littlemock" name="platform/external/littlemock" />
   <project path="external/llvm" name="platform/external/llvm" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
@@ -169,64 +178,65 @@
   <project path="external/okhttp" name="platform/external/okhttp" />
   <project path="external/opencv" name="platform/external/opencv" />
   <project path="external/openfst" name="platform/external/openfst" />
-  <project path="external/openssh" name="platform/external/openssh" />
-  <project path="external/openssl" name="platform/external/openssl" />
-  <project path="external/oprofile" name="platform/external/oprofile" />
-  <project path="external/ping" name="platform/external/ping" />
-  <project path="external/ping6" name="platform/external/ping6" />
-  <project path="external/powertop" name="android_external_powertop" remote="cm" revision="cm-10.1" />
+  <project name="platform/external/openssh" path="external/openssh" revision="0ee00ea9bcdb51613cecc8db38a825194ecd2013" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/openssl" path="external/openssl" revision="e29b531c8b995b87fd9dd9217f5af97f2146cd2b" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/oprofile" path="external/oprofile" revision="fb059423092f9523ee6bfbccff1d9fb4db86941e" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/ping" path="external/ping" revision="4a01cedb333aade0730fe6a62c69e164494a8c05" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/ping6" path="external/ping6" revision="00d15dcac6bece37b116ec049c0b4464c0ba11eb" upstream="linaro_android_4.2.1"/>
   <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" />
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/qemu" name="platform/external/qemu" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" />
   <project path="external/qrngd" name="android_external_qrngd" remote="cm" revision="cm-10.1" />
-  <project path="external/quake" name="platform/external/quake" />
+  <project name="platform/external/quake" path="external/quake" revision="22cfb26232c315c6926ea642be41e9dff77d6558" upstream="linaro_android_4.2.1"/>
   <project path="external/regex-re2" name="platform/external/regex-re2" />
   <project path="external/replicaisland" name="platform/external/replicaisland" />
   <project path="external/rsync" name="android_external_rsync" remote="cm" revision="cm-10.1" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
-  <project path="external/skia" name="platform_external_skia" remote="vanir" revision="jb42" />
+  <project name="platform/external/skia" path="external/skia" revision="2db5e74d7a176c4ee282a3ea88b16141d1059ed6" upstream="linaro_android_4.2.1"/>
   <project path="external/smali" name="platform/external/smali" />
-  <project path="external/sonivox" name="platform/external/sonivox" />
-  <project path="external/speex" name="platform/external/speex" />
+  <project name="platform/external/sonivox" path="external/sonivox" revision="94b00334484b28f5c080a3d0c3121b056d1171f3" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/speex" path="external/speex" revision="b1d80753f24f4fc5e04246ea1f056ac46552cadf" upstream="linaro_mmwg"/>
   <project path="external/sqlite" name="platform_external_sqlite" remote="vanir" revision="jb42" />
   <project path="external/srec" name="platform/external/srec" />
   <project path="external/srtp" name="platform/external/srtp" />
-  <project path="external/stlport" name="platform/external/stlport" />
+  <project name="platform/external/stlport" path="external/stlport" revision="19ee87efb58dc10486b309530abc6f26e2d1677c" upstream="linaro_android_4.2.1"/>
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/stressapptest" name="platform/external/stressapptest" />
+  <project name="platform/external/stringbench" path="external/stringbench" revision="fd7cbe7b0c0714f43e972074067fe08d79054964" upstream="master"/>
   <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tcpdump" name="platform/external/tcpdump" />
+  <project name="platform/external/tcpdump" path="external/tcpdump" revision="43a64c6867a81b193f5d9d68ab557db0f2457e7a" upstream="linaro_android_4.2.1"/>
   <project path="external/tinyalsa" name="platform/external/tinyalsa" />
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" />
   <project path="external/tremolo" name="platform/external/tremolo" />
-  <project path="external/v8" name="AOKP/external_v8" remote="aokp" revision="jb-mr1" />
+  <project name="platform/external/v8" path="external/v8" revision="8db2b6bd311106e7e45cc2cb40f39715e999a986" upstream="linaro_android_4.2.1"/>
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="platform_external_webkit" remote="vanir" revision="jb42" />
+  <project name="platform/external/webkit" path="external/webkit" revision="6999cd453f77d95bf2b65d06a2c7b8e8a3dafc24" upstream="linaro_android_4.2.1"/>
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="9d6a26ee93ace437eda351c5be1ec11952e802f6" upstream="linaro_android_4.2.1"/>
+  <project name="platform/external/x264" path="external/x264" revision="f4d23f31acbafa39568a6d5ef40d61bd13cae7b2" upstream="linaro-master"/>
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="cm" revision="cm-10.1" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="vanir" revision="jb42" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
+  <project name="platform/frameworks/av" path="frameworks/av" revision="51bffadb822b2e08aebe72679af9a2671b3616d9" upstream="linaro_android_4.2.1"/>
+  <project name="platform/frameworks/base" path="frameworks/base" remote="vanir" remote="linaro421-WIP" />
+  <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="ee04f97ac652316dd36d3127aad129a6575a0d69" upstream="linaro_android_4.2.1"/>
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
-  <project path="frameworks/ex" name="platform/frameworks/ex" />
+  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="8ece77cd637be52f630996b6e7ffc5441f69faa9" upstream="linaro_android_4.2.1"/>
+  <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="7acde94fe91837f8dacd281ce1f64e841c983225" upstream="linaro_android_4.2.1"/>
+  <project name="platform/frameworks/ex" path="frameworks/ex" revision="6129b286f065bd6e9d2deb7b0ee761e7f3abae26" upstream="linaro_android_4.2.1"/>
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="platform_framworks_native" remote="vanir" revision="jb42" />
+  <project name="platform/frameworks/native" path="frameworks/native" remote="vanir" revision="linaro421-WIP"/>
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
@@ -239,45 +249,53 @@
   <project path="frameworks/rs" name="AOKP/frameworks_rs" remote="aokp" revision="jb-mr1" />
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
-  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
+  <project name="platform/frameworks/rs" path="frameworks/rs" revision="4da03cd0680db634a80f98697e5473597cb6c828" upstream="linaro_android_4.2.1"/>
+  <project name="platform/frameworks/support" path="frameworks/support" revision="e6360c9b21258e1c85b6cef02c0c0bc5cd991653" upstream="linaro_android_4.2.1"/>
+  <project path="frameworks/testing" name="platform/frameworks/testing" />
+  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="8235fc7211ba2f89e3da327824f6cb0a57e0ef27" upstream="linaro_android_4.2.1"/>
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project path="hardware/libhardware" name="hardware_libhardware"  remote="vanir" revision="jb42" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="9625fba7a6a3ca85992ee5b965ccd74bc3c522b1" upstream="linaro_android_4.2.1"/>
+  <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="02b3aa54a9a69e9d1fd79dc809b53475b4063b24" upstream="linaro_android_4.2.1"/>
+  <project name="platform/hardware/linaro/tinyhal" path="hardware/linaro/tinyhal" revision="14100e871ee8c5f2d5611fcd587183ab013c602e" upstream="linaro-jellybean"/>
+  <project name="platform/hardware/ril" path="hardware/ril" revision="96a15c0329caa5926d4edb0fb41d5ceb0bf46ffe" upstream="linaro_android_4.2.1"/>
+  <project name="platform/hardware/samsung/origen/gralloc_ump" path="hardware/samsung/origen/gralloc_ump" revision="e41e23df3a4282f017d4afa796e2578238e71e2f" upstream="linaro_android_jb"/>
+  <project name="platform/hardware/samsung/origen/ump" path="hardware/samsung/origen/ump" revision="02c4f7f1b6666f57ca99e921c3c30311d5571648" upstream="linaro_android_jb"/>
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
+  <project name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" remote="vanir" revision="linaro421-WIP" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="libcore" name="platform_libcore" remote="vanir" revision="jb42" />
+  <project name="platform/libcore" path="libcore" revision="9552daa50e5f6908a6a80441d8c1cf5c0e01c5fc" upstream="linaro_android_4.2.1"/>
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
+  <project name="platform/packages/apps/0xbench" path="packages/apps/0xbench" revision="8192b3faaa424a13b90f26541399419aaddf956e" upstream="linaro-master"/>
   <project path="packages/apps/AppWidgetPicker" name="packages_apps_AppWidgetPicker" remote="fnv" revision="jb" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
   <project path="packages/apps/Browser" name="packages_apps_Browser" remote="vanir" revision="jb42" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="cm" revision="cm-10.1" />
+  <project name="platform/packages/apps/Camera" path="packages/apps/Camera" revision="872dd83a97e2dbb9df1e41aa6116c55852f25bdc" upstream="linaro_android_4.2.1"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="vanir" revision="jb42" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="vanir" revision="jb42" />
+  <project name="platform/packages/apps/DisableSuspend" path="packages/apps/DisableSuspend" revision="f652cc59ebbc1bcc715572a24a2cc03882811a11" upstream="master"/>
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="vanir" revision="jb42" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform_packages_apps_Launcher2" remote="vanir" revision="jb42" />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
+  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="4e328b4f39f27ba3bf28e15910a5954b53f9381a" upstream="linaro_android_4.2.1"/>
   <project path="packages/apps/Mms" name="packages_apps_Mms" remote="vanir" revision="jb42" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="vanir" revision="jb42" />
   <project path="packages/apps/Phone" name="packages_apps_phone" remote="vanir" revision="jb42" />
   <project path="packages/apps/QuickSearchBox" name="packages_apps_quicksearchbox" remote="vanir" revision="jb42" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="vanir" revision="jb42" />
+  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" remote="vanir" revision="linaro421-WIP" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="packages_apps_soundrecorder" remote="vanir" revision="jb42" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -286,7 +304,7 @@
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="packages_input_LatinIME" remote="vanir" revision="jb42" />
+  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" remote="vanir" revision="linaro421-WIP" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
@@ -337,12 +355,12 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform_system_core" remote="vanir" revision="jb42" />
-  <project path="system/extras" name="platform_system_extras" remote="vanir" revision="jb42" />
+  <project name="platform/system/core" path="system/core" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform/system/extras" path="system/extras" revision="463536c2eea59f07f517df3a5d87b01ab39006eb" upstream="linaro_android_4.2.1"/>
+  <project name="platform/system/security" path="system/security" revision="baaaa740b0230cdb78f1641c27d960051bebf822" upstream="linaro_android_4.2.1"/>
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
-  <project path="system/security" name="AOKP/system_security"  remote="aokp" revision="jb-mr1" />
-  <project path="system/vold" name="platform_system_vold" remote="vanir" revision="jb42" />
+  <project name="platform/system/vold" path="system/vold" revision="960415f48ece1cb59135767ccfc44c501530af8f" upstream="linaro_android_4.2.1"/>
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
   <project path="vendor/samsung" name="platform_vendor_samsung" remote="vanir" revision="jb42" groups="vendor" />
@@ -352,4 +370,7 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="cm" revision="cm-10.1" />
+  <project name="tools/pm-qa" path="external/pm-qa" remote="linaro-other" revision="a77dcef7657b629d3f1a2ef3fe1a30dc2a8774c7" upstream="master"/>
+  <project name="tools/powertop-2.0" path="external/powertop" remote="linaro-other" revision="a322b28a9580b245c29c128a425c320d34c78821" upstream="linaro-2012.12"/>
+  <!-- END NUCLEAR VOODOO -->
 </manifest>
