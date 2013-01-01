@@ -55,9 +55,6 @@
   <project groups="device" name="device/samsung/maguro" remote="vanir" revision="linaro421-WIP" />
   <project groups="device" name="device/samsung/toro" remote="vanir" revision="linaro421-WIP" />
   <project groups="device" name="device/samsung/tuna" remote="vanir" revision="linaro421-WIP" />
-  <project name="device/ti/proprietary-open" revision="124f4b454c5fd8fd1a04b18043f6d698f617fd83" upstream="ics"/>
-  <project name="device/ti/uim" revision="20f65b810f78dd6a74ddef1aaf8e6cb5c69be9d8" upstream="android"/>
-  <project name="hardware/linaro/common" revision="linaro_android_jb" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
