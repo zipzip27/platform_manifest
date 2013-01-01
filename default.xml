@@ -243,8 +243,8 @@
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="vanir" revision="cm-10.1" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
-  <project path="frameworks/rs" name="AOKP/frameworks_rs" remote="aokp" revision="jb-mr1" />
-  <project path="frameworks/support" name="platform/frameworks/support" />
+  <project name="platform/frameworks/rs" path="frameworks/rs" revision="4da03cd0680db634a80f98697e5473597cb6c828" upstream="linaro_android_4.2.1"/>
+  <project name="platform/frameworks/support" path="frameworks/support" revision="e6360c9b21258e1c85b6cef02c0c0bc5cd991653" upstream="linaro_android_4.2.1"/>
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project name="platform/frameworks/rs" path="frameworks/rs" revision="4da03cd0680db634a80f98697e5473597cb6c828" upstream="linaro_android_4.2.1"/>
   <project name="platform/frameworks/support" path="frameworks/support" revision="e6360c9b21258e1c85b6cef02c0c0bc5cd991653" upstream="linaro_android_4.2.1"/>
