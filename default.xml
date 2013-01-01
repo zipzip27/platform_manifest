@@ -18,6 +18,8 @@
            sync-c="true"
            sync-j="4" />
   
+  <project path="manifest" name="platform_manifest" remote="vanir" revision="linaro42" />
+
   <!-- BEGIN LINARO VOODOO -->
   <project name="arm/ds5/gator" path="external/gator" remote="linaro-other" revision="197f43d9c9c94dec5f05cb93047d9d10f7915265" upstream="android"/>
   <project name="boot/u-boot-linaro-stable" path="u-boot" remote="linaro-other" revision="102afa29de951a2aca93e75fa84d596c92634d05" upstream="master"/>  
@@ -32,17 +34,16 @@
   <!-- END LINARO VOODOO -->
 
   <!-- BEGIN NUCLEAR VOODOO -->
-  <project path="manifest" name="platform_manifest" remote="vanir" revision="linaro421-WIP" />
-  <project name="platform/build" path="build" remote="vanir" revision="linaro421-WIP" >
+  <project name="platform_build" path="build" remote="vanir" revision="linaro421-WIP" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project name="platform/bionic" path="bionic" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_bionic" path="bionic" remote="vanir" revision="linaro421-WIP" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
-  <project name="platform/dalvik" path="dalvik" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_dalvik" path="dalvik" remote="vanir" revision="linaro421-WIP" />
   <project name="platform/development" path="development" revision="be095b40b1e9cb567af641e524576c8ae937ead7" upstream="linaro_android_4.2.1"/>
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />
@@ -52,9 +53,9 @@
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
-  <project groups="device" name="device/samsung/maguro" remote="vanir" revision="linaro421-WIP" />
-  <project groups="device" name="device/samsung/toro" remote="vanir" revision="linaro421-WIP" />
-  <project groups="device" name="device/samsung/tuna" remote="vanir" revision="linaro421-WIP" />
+  <project groups="device" name="device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
+  <project groups="device" name="device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
+  <project groups="device" name="device_samsung_tuna" remote="vanir" revision="linaro421-WIP" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
