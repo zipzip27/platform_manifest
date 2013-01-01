@@ -58,6 +58,7 @@
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
   <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
   <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
+  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/tuna" groups="device" name="platform_device_samsung_tuna" remote="vanir" revision="linaro421-WIP" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
