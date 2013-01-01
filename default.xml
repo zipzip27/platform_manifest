@@ -53,9 +53,9 @@
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
-  <project groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
-  <project groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
-  <project groups="device" name="platform_device_samsung_tuna" remote="vanir" revision="linaro421-WIP" />
+  <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
+  <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
+  <project path="device/samsung/tuna" groups="device" name="platform_device_samsung_tuna" remote="vanir" revision="linaro421-WIP" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
