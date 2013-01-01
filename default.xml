@@ -83,15 +83,15 @@
   <project name="platform/external/chromium" path="external/chromium" revision="6c05ecefa21154c1916a4af4e40fb1045ccaeb52" upstream="linaro_android_4.2.1"/>
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
-  <project path="external/clang" name="platform/external/clang" />
+  <project name="platform/external/clang" path="external/clang" revision="f9e0e3657fb2a40f220e06030c2b16731b6700a1" upstream="linaro_android_4.2.1"/>
   <project path="external/compiler-rt" name="platform/external/compiler-rt" />
   <project path="external/dbus" name="platform/external/dbus" />
   <project path="external/dexmaker" name="platform/external/dexmaker" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
-  <project path="external/dnsmasq" name="external_dnsmasq" remote="vanir" revision="jb42" />
+  <project name="platform/external/dnsmasq" path="external/dnsmasq" revision="60911f4f1115a2c6582f15e6ab705b562ecbd555" upstream="linaro_android_4.2.1"/>
   <project path="external/doclava" name="platform/external/doclava" />
   <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
+  <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="6862bbef9b7059ed2a0f61324d4f6cb69b499f1b" upstream="linaro_android_4.2.1"/>
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
@@ -103,6 +103,7 @@
   <project path="external/eyes-free" name="platform/external/eyes-free" />
   <project path="external/fat32lib" name="platform/external/fat32lib" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
+  <project name="platform/external/ffmpeg" path="external/ffmpeg" revision="6737c8e3a8878c113700c91429f6c096f4648c7e" upstream="linaro-1.0.1"/>
   <project path="external/flac" name="platform/external/flac" />
   <project name="platform/external/freetype" path="external/freetype" revision="02e897145035a0613908ef735cdbe87b5e4405b3" upstream="linaro_android_4.2.1"/>
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
@@ -157,12 +158,16 @@
   <project path="external/libyuv" name="platform/external/libyuv" />
   <project name="platform/external/linux-tools-perf" path="external/linux-tools-perf" revision="8d452eb3c1672d451bfa213e7d4a4bf2398d07b6" upstream="linaro_android_4.2.1"/>
   <project path="external/littlemock" name="platform/external/littlemock" />
-  <project path="external/llvm" name="platform/external/llvm" />
+  <project name="platform/external/llvm" path="external/llvm" revision="1f2e42e242d07b9b23747529ae965c0779c4c81d" upstream="linaro_android_4.2.1"/>
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
+  <project name="platform/external/lrzsz" path="external/lrzsz" revision="3d23b85dd8e58ff5a697957c7fdfe2706e8cbf41" upstream="linaro-master"/>
   <project path="external/markdown" name="platform/external/markdown" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" />
+  <project name="platform/external/mesa3d" path="external/mesa3d" revision="06cae55acb302d6ae8dc4efacbf2d9bf2a37399f" upstream="linaro_android_4.2.1"/>
   <project path="external/mksh" name="platform/external/mksh" />
+  <project name="platform/external/markdown" path="external/markdown" revision="6f2e3554ae38cc90518d32e02cb57d05988270a6" upstream="refs/tags/android-4.2.1_r1"/>
+  <project name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="8d61c6ee30ea24755dfd111fb497c0533c0ff461" upstream="refs/tags/android-4.2.1_r1"/>
+  <project name="platform/external/mesa3d" path="external/mesa3d" revision="06cae55acb302d6ae8dc4efacbf2d9bf2a37399f" upstream="linaro_android_4.2.1"/>
   <project path="external/mockwebserver" name="platform/external/mockwebserver" />
   <project path="external/mp4parser" name="platform/external/mp4parser" />
   <project path="external/mtpd" name="platform/external/mtpd" />
