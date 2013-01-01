@@ -53,6 +53,8 @@
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
   <project name="device/linaro/common" revision="4bc508a7b487ede68559b470bca6ef9636c85c79" upstream="linaro-jb"/>
+  <project groups="device" name="device/asus/grouper" revision="c384f5f2ac0c60106a93b45c30ff4137131f2d39" upstream="refs/tags/android-4.2.1_r1"/>
+  <project groups="device" name="device/asus/tilapia" revision="148ec084c4c40e7c3b833c6f65cbee6c703593fc" upstream="refs/tags/android-4.2.1_r1"/>
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
   <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
   <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
