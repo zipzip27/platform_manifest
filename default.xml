@@ -52,6 +52,7 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
+  <project name="device/linaro/common" revision="4bc508a7b487ede68559b470bca6ef9636c85c79" upstream="linaro-jb"/>
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
   <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
   <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
