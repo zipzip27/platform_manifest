@@ -290,7 +290,7 @@
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="vanir" revision="jb42" />
   <project path="packages/apps/Phone" name="packages_apps_phone" remote="vanir" revision="jb42" />
   <project path="packages/apps/QuickSearchBox" name="packages_apps_quicksearchbox" remote="vanir" revision="jb42" />
-  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="vanir" revision="linaro421-WIP" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="packages_apps_soundrecorder" remote="vanir" revision="jb42" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -299,7 +299,7 @@
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
-  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_packages_input_LatinIME" path="packages/inputmethods/LatinIME" remote="vanir" revision="linaro421-WIP" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
@@ -350,7 +350,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project name="platform/system/core" path="system/core" remote="vanir" revision="linaro421-WIP" />
+  <project name="platform_system_core" path="system/core" remote="vanir" revision="linaro421-WIP" />
   <project name="platform/system/extras" path="system/extras" revision="463536c2eea59f07f517df3a5d87b01ab39006eb" upstream="linaro_android_4.2.1"/>
   <project name="platform/system/security" path="system/security" revision="baaaa740b0230cdb78f1641c27d960051bebf822" upstream="linaro_android_4.2.1"/>
   <project path="system/media" name="platform/system/media" />
