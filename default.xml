@@ -227,7 +227,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project name="platform/frameworks/av" path="frameworks/av" revision="51bffadb822b2e08aebe72679af9a2671b3616d9" upstream="linaro_android_4.2.1"/>
-  <project name="platform/frameworks/base" path="frameworks/base" remote="vanir" remote="linaro421-WIP" />
+  <project name="platform/frameworks/base" path="frameworks/base" remote="vanir" revision="linaro421-WIP" />
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="ee04f97ac652316dd36d3127aad129a6575a0d69" upstream="linaro_android_4.2.1"/>
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
