@@ -251,7 +251,7 @@
   <project path="gdk" name="platform/gdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="9625fba7a6a3ca85992ee5b965ccd74bc3c522b1" upstream="linaro_android_4.2.1"/>
+  <project name="hardware_libhardware" path="hardware/libhardware" remote="vanir" revision="linaro421-WIP" />
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="02b3aa54a9a69e9d1fd79dc809b53475b4063b24" upstream="linaro_android_4.2.1"/>
   <project name="platform/hardware/linaro/tinyhal" path="hardware/linaro/tinyhal" revision="14100e871ee8c5f2d5611fcd587183ab013c602e" upstream="linaro-jellybean"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="96a15c0329caa5926d4edb0fb41d5ceb0bf46ffe" upstream="linaro_android_4.2.1"/>
