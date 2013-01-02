@@ -78,7 +78,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project name="platform/external/busybox" path="external/busybox" revision="6a5207956e46684c22e418da261579dac54c17fb" upstream="linaro-1.19"/>
+  <project name="platform/external/busybox" name="android_external_busybox" remote="cm" revision="cm-10.1" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project name="platform/external/chromium" path="external/chromium" revision="6c05ecefa21154c1916a4af4e40fb1045ccaeb52" upstream="linaro_android_4.2.1"/>
@@ -152,6 +152,7 @@
   <project path="external/libppp" name="platform/external/libppp" />
   <project path="external/libselinux" name="platform/external/libselinux" />
   <project path="external/libsepol" name="platform/external/libsepol" />
+  <project path="external/lsof" name="android_external_lsof" remote="cm" revision="cm-10.1" />
   <project path="external/libusb" name="platform/external/libusb" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" />
   <project path="external/libvorbis" name="platform/external/libvorbis" />
@@ -173,7 +174,6 @@
   <project path="external/mp4parser" name="platform/external/mp4parser" />
   <project path="external/mtpd" name="platform/external/mtpd" />
   <project path="external/naver-fonts" name="platform/external/naver-fonts" />
-  <!--<project name="platform/external/ncurses" path="external/ncurses" revision="5fc466743430377a29b0dc6a38b0d1de843581e7" upstream="linaro"/>-->
   <project path="external/netcat" name="platform/external/netcat" />
   <project path="external/netperf" name="platform/external/netperf" />
   <project path="external/neven" name="platform/external/neven" />
