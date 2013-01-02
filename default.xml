@@ -21,15 +21,9 @@
   <project path="manifest" name="platform_manifest" remote="vanir" revision="linaro42" />
 
   <!-- BEGIN LINARO VOODOO -->
-  <project name="arm/ds5/gator" path="external/gator" remote="linaro-other" revision="197f43d9c9c94dec5f05cb93047d9d10f7915265" upstream="android"/>
-  <project name="boot/u-boot-linaro-stable" path="u-boot" remote="linaro-other" revision="102afa29de951a2aca93e75fa84d596c92634d05" upstream="master"/>  
   <project name="device/ti/proprietary-open" revision="124f4b454c5fd8fd1a04b18043f6d698f617fd83" upstream="ics"/>
   <project name="device/ti/uim" revision="20f65b810f78dd6a74ddef1aaf8e6cb5c69be9d8" upstream="android"/>
-  <project name="hardware/linaro/common" revision="5e02e26d4f6de4b95d757a5fdfbb890beb308483" upstream="linaro_android_jb"/>
   <project name="kernel/omap" path="kernel" revision="d5a18e013da25a07b330fd70c212ac477cabff4e"/>
-  <project name="lava-blackbox" path="external/lava-blackbox" remote="zyga" revision="817376ec14e2a132dc77231d6fb29eb3b2142ec1" upstream="master"/>
-  <project name="people/afrantzis/glmark2" path="packages/apps/glmark2" remote="linaro-other" revision="b55bf8442bb7e13787e1e47411bf4d61691c7686" upstream="master"/>
-  <project name="people/kejunzhou/tools_for_pm-qa" path="external/tools_for_pm-qa" remote="linaro-other" revision="32d84d016ce1a89b591ae058c2a31c245ecb6a3b" upstream="master"/>
   <project name="people/tomgall/libjpeg-turbo/libjpeg-turbo" path="external/jpeg" remote="linaro-other" revision="52969c9b2cf9db0162bc1c1e9b9f27bd362908ba" upstream="android"/>
   <!-- END LINARO VOODOO -->
 
@@ -52,12 +46,11 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/generic/mips" name="device/generic/mips" />
   <project path="device/generic/x86" name="device/generic/x86" />
-  <project name="device/linaro/common" revision="4bc508a7b487ede68559b470bca6ef9636c85c79" upstream="linaro-jb"/>
   <project groups="device" name="device/asus/grouper" revision="c384f5f2ac0c60106a93b45c30ff4137131f2d39" upstream="refs/tags/android-4.2.1_r1"/>
   <project groups="device" name="device/asus/tilapia" revision="148ec084c4c40e7c3b833c6f65cbee6c703593fc" upstream="refs/tags/android-4.2.1_r1"/>
   <project path="device/sample" name="platform_device_sample" remote="vanir" revision="jb42" />
-  <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="linaro421-WIP" />
-  <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="linaro421-WIP" />
+  <project path="device/samsung/maguro" groups="device" name="platform_device_samsung_maguro" remote="vanir" revision="jb42" />
+  <project path="device/samsung/toro" groups="device" name="platform_device_samsung_toro" remote="vanir" revision="jb42" />
   <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/tuna" groups="device" name="platform_device_samsung_tuna" remote="vanir" revision="linaro421-WIP" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -258,7 +251,6 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project name="hardware_libhardware" path="hardware/libhardware" remote="vanir" revision="linaro421-WIP" />
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="02b3aa54a9a69e9d1fd79dc809b53475b4063b24" upstream="linaro_android_4.2.1"/>
-  <project name="platform/hardware/linaro/tinyhal" path="hardware/linaro/tinyhal" revision="14100e871ee8c5f2d5611fcd587183ab013c602e" upstream="linaro-jellybean"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="96a15c0329caa5926d4edb0fb41d5ceb0bf46ffe" upstream="linaro_android_4.2.1"/>
   <project name="platform/hardware/samsung/origen/gralloc_ump" path="hardware/samsung/origen/gralloc_ump" revision="e41e23df3a4282f017d4afa796e2578238e71e2f" upstream="linaro_android_jb"/>
   <project name="platform/hardware/samsung/origen/ump" path="hardware/samsung/origen/ump" revision="02c4f7f1b6666f57ca99e921c3c30311d5571648" upstream="linaro_android_jb"/>
@@ -270,7 +262,6 @@
   <project name="platform/libcore" path="libcore" revision="9552daa50e5f6908a6a80441d8c1cf5c0e01c5fc" upstream="linaro_android_4.2.1"/>
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
-  <project name="platform/packages/apps/0xbench" path="packages/apps/0xbench" revision="8192b3faaa424a13b90f26541399419aaddf956e" upstream="linaro-master"/>
   <project path="packages/apps/AppWidgetPicker" name="packages_apps_AppWidgetPicker" remote="fnv" revision="jb" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
@@ -281,7 +272,6 @@
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="vanir" revision="jb42" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="vanir" revision="jb42" />
-  <project name="platform/packages/apps/DisableSuspend" path="packages/apps/DisableSuspend" revision="f652cc59ebbc1bcc715572a24a2cc03882811a11" upstream="master"/>
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="vanir" revision="jb42" />
