@@ -1,7 +1,7 @@
 Team Vanir's repo
 ===========
 
-This branch is for vanir's android-4.2.1_r1 based ROM
+This branch is for vanir's linaro_android-4.2.1_r1 based ROM
 
 NuclearMistake is the greatest
 PrimeDirective is OHNOEZGOJIRRA!!!
@@ -13,7 +13,7 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u git://github.com/VanirAOSP/platform_manifest.git -b jb42
+    repo init -u git://github.com/VanirAOSP/platform_manifest.git -b linaro42 
 
 Then to sync up:
 
