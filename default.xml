@@ -118,6 +118,7 @@
   <project name="platform/external/guava" path="external/guava" revision="515370823799decea74751ff3a78b80e44e71219" upstream="linaro_android_4.2.1"/>
   <project path="external/hamcrest" name="platform/external/hamcrest" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
+  <project path="external/htop" name="android_external_htop" remote="cm" revision="cm-10.1" />
   <project path="external/hyphenation" name="platform/external/hyphenation" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iproute2" name="platform/external/iproute2" />
@@ -139,6 +140,7 @@
   <project path="external/libgsm" name="platform/external/libgsm" />
   <project path="external/liblzf" name="platform/external/liblzf" />
   <project path="external/libmtp" name="platform/external/libmtp" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="cm" revision="cm-10.1" />
   <project path="external/libnfc-nci" name="platform/external/libnfc-nci" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
   <project name="platform/external/libnl" path="external/libnl" revision="bbcb553f0f4636dd40e84d320a576b3de7b95357" upstream="linaro"/>
@@ -190,9 +192,11 @@
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/qemu" name="platform/external/qemu" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" />
+  <project path="external/qrngd" name="android_external_qrngd" remote="cm" revision="cm-10.1" />
   <project name="platform/external/quake" path="external/quake" revision="22cfb26232c315c6926ea642be41e9dff77d6558" upstream="linaro_android_4.2.1"/>
   <project path="external/regex-re2" name="platform/external/regex-re2" />
   <project path="external/replicaisland" name="platform/external/replicaisland" />
+  <project path="external/rsync" name="android_external_rsync" remote="cm" revision="cm-10.1" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
   <project name="platform/external/skia" path="external/skia" revision="2db5e74d7a176c4ee282a3ea88b16141d1059ed6" upstream="linaro_android_4.2.1"/>
