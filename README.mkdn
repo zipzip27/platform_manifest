@@ -1,7 +1,7 @@
 Team Vanir's repo
 ===========
 
-This branch is for vanir's linaro_android-4.2.1_r1 based ROM
+This branch is for vanir's linaro_android_4.2.1 based ROM
 
 NuclearMistake is the greatest
 PrimeDirective is OHNOEZGOJIRRA!!!
