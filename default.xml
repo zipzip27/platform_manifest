@@ -78,7 +78,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project name="platform/external/busybox" name="android_external_busybox" remote="cm" revision="cm-10.1" />
+  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-10.1" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project name="platform/external/chromium" path="external/chromium" revision="6c05ecefa21154c1916a4af4e40fb1045ccaeb52" upstream="linaro_android_4.2.1"/>
