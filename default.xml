@@ -372,6 +372,6 @@
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="cm" revision="cm-10.1" />
   <project name="tools/pm-qa" path="external/pm-qa" remote="linaro-other" revision="a77dcef7657b629d3f1a2ef3fe1a30dc2a8774c7" upstream="master"/>
-  <project name="tools/powertop-2.0" path="external/powertop" remote="linaro-other" revision="a322b28a9580b245c29c128a425c320d34c78821" upstream="linaro-2012.12"/>
+  <project path="external/powertop" name="android_external_powertop" remote="cm" revision="cm-10.1" />
   <!-- END NUCLEAR VOODOO -->
 </manifest>
