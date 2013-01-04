@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="vanir"
-          fetch="git@github.com:VanirAOSP/"
-          push="git@github.com:VanirAOSP/"
+          fetch="git://github.com/VanirAOSP/"
+          push="git://github.com:VanirAOSP/"
           review="vaniraosp.goo.im" />
   <remote fetch="git://android.git.linaro.org/" name="aosp" review="review.android.git.linaro.org"/>
   <remote fetch="https://android-review.googlesource.com/" name="aosp-upstream" review="https://android-review.googlesource.com/"/>
