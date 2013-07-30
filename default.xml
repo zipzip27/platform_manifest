@@ -33,9 +33,9 @@
   </project>
   <project path="abi/cpp" name="android_abi_cpp" />
   <project path="bionic" name="platform_bionic" remote="vanir" revision="jb42" />
-  <project path="bootable/bootloader/legacy" name="android_bootable_bootloader_legacy" revision="b9ecf6480514bdd21e5a546a7ff376920b31153b" />
+  <project path="bootable/bootloader/legacy" name="android_bootable_bootloader_legacy" />
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" />
-  <project path="bootable/recovery" name="android_bootable_recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" revision="b9ecf6480514bdd21e5a546a7ff376920b31153b" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="dalvik" name="platform_dalvik" remote="vanir" revision="jb42" />
   <project path="development" name="platform_development" remote="vanir" revision="linaro_android_4.2.2" />
