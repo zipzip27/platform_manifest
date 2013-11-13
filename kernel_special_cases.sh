@@ -3,9 +3,6 @@
 
 ## all non-specified kernels are assumed to be from CyanogenMod
 
-export defaultremote=cm
-export defaultrevision=cm-10.2
-
 case $1 in
     apache)
         export remote="github"
@@ -54,5 +51,9 @@ case $1 in
         export remote="github"
         export remoterevision="cm-10.2"
         export kernelsource="vigor/vigor_aosp_kernel"
-   ;;
+    ;;
+    *)
+        export remote="cm"
+        export remoterevision="cm-10.2"
+    ;;
 esac
