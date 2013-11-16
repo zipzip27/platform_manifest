@@ -4,11 +4,6 @@
 ## all non-specified kernels are assumed to be from CyanogenMod
 
 case $1 in
-    apache)
-        export remote="github"
-        export remoterevision="cm-10.1"
-        export kernelsource="Motorhead1991/samsung-kernel-msm7x30"
-    ;;
     d800|d801|d802|vs980)
         export remote="vanir"
         export kernelsource="kernel_lge_msm8974"
