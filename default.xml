@@ -206,8 +206,8 @@
   <project path="external/kernel-headers" name="android_external_kernel-headers" />
   <project path="external/kissfft" name="android_external_kissfft" />
   <project path="external/klogripper" name="external_klogripper" remote="vanir" revision="jb43" />
-  <project path="external/koush/ion" name="ion" />
-  <project path="external/koush/AndroidAsync" name="AndroidAsync" />
+  <project path="external/koush/ion" name="ion" revision="9a448a3e09959b99f482bce56cac10d81f7a60d5" />
+  <project path="external/koush/AndroidAsync" name="AndroidAsync" revision="b8c0d678b55f3ecc7a02112a2f4bd3c998a8a289" />
   <project path="external/koush/Superuser" name="Superuser" />
   <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
   <project path="external/libcap-ng" name="android_external_libcap-ng" />
