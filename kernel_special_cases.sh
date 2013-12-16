@@ -22,6 +22,11 @@ case $1 in
         export remoterevision="jb43"
         export kernelsource="kernel_samsung_jf"
     ;;
+    m4)
+        export remote="vanir"
+        export remoterevision="jb43"
+        export kernelsource="kernel_htc_m4"
+    ;;
     m7*|dlx)
         export remote="vanir"
         export remoterevision="sonic-dev"
