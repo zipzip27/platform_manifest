@@ -10,8 +10,8 @@
   <remote name="cm"
           fetch="http://github.com/CyanogenMod"
           review="review.cyanogenmod.com" />
-  <remote name="cfx"
-          fetch="https://bitbucket.org/codefirex/" />
+  <remote name="cfx-devel"
+          fetch="https://github.com/codefireXperiment" />
   <remote name="github"
           fetch="https://github.com/" />
   <remote name="omni"
@@ -520,6 +520,24 @@
   <project path="system/qcom" name="system_qcom" groups="qcom" remote="vanir" revision="kk44-kingsize" />
   <project path="system/security" name="system_security" remote="vanir" revision="kk44-kingsize" groups="pdk" />
   <project path="system/vold" name="system_vold" remote="vanir" revision="kk44-kingsize" groups="pdk" />
+  <project path="toolchain" name="toolchain" remote="cfx-exp" revision="kk-devel" />
+  <project path="toolchain/src/binutils/binutils-upstream" name="toolchain_binutils-upstream" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/build" name="toolchain_build" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/llvm/tools/clang" name="toolchain_clang" remote="cfx-exp" revision="develop_35" />
+  <project path="toolchain/src/cloog" name="toolchain_cloog" remote ="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/llvm/projects/compiler-rt" name="toolchain_compiler-rt" remote="cfx-exp" revision="develop_35" />
+  <project path="toolchain/src/expat" name="toolchain/expat" remote="aosp" revision="master" />
+  <project path="toolchain/src/gcc" name="toolchain_gcc" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/gdb" name="toolchain_gdb" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/gmp" name="toolchain_gmp" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/isl" name="toolchain_isl" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/llvm/tools/lldb" name="toolchain_lldb" remote="cfx-exp" revision="develop_35" />
+  <project path="toolchain/src/llvm" name="toolchain_llvm" remote="cfx-exp" revision="develop_35" />
+  <project path="toolchain/src/mpc" name="toolchain_mpc" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/mpfr" name="toolchain_mpfr" remote="cfx-exp" revision="jb-devel" />
+  <project path="toolchain/src/llvm/tools/polly" name="toolchain_polly" remote="cfx-exp" revision="develop_35" />
+  <project path="toolchain/src/ppl" name="Mustaavalkosta/toolchain_ppl" remote="github" revision="master" />
+  <project path="toolchain/src/texinfo" name="toolchain_texinfo" remote="cfx-exp" revision="jb-devel" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
