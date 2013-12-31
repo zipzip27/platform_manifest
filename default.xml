@@ -474,44 +474,61 @@
   <project path="packages/wallpapers/NoiseField" name="android_packages_wallpapers_NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" />
   <project path="pdk" name="platform/pdk"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="platform/prebuilts/clang/darwin-x86/arm/3.3" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/darwin-x86/host/3.3" name="platform/prebuilts/clang/darwin-x86/host/3.3" groups="darwin"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/darwin-x86/mips/3.3" name="platform/prebuilts/clang/darwin-x86/mips/3.3" groups="darwin,mips"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="platform/prebuilts/clang/darwin-x86/x86/3.3" groups="darwin,x86"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="pdk,linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/linux-x86/arm/3.3" name="platform/prebuilts/clang/linux-x86/arm/3.3" groups="linux,arm"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/linux-x86/host/3.3" name="platform/prebuilts/clang/linux-x86/host/3.3" groups="linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/linux-x86/mips/3.3" name="platform/prebuilts/clang/linux-x86/mips/3.3" groups="linux,mips"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/clang/linux-x86/x86/3.3" name="platform/prebuilts/clang/linux-x86/x86/3.3" groups="linux,x86"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/eclipse-build-deps-sources" name="platform/prebuilts/eclipse-build-deps-sources" groups="notdefault,eclipse"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="pdk,darwin,arm"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" groups="pdk,darwin,arm"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" groups="pdk,darwin,mips"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="pdk,darwin,x86"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="pdk,linux,arm"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" remote="cfx" revision="jb-devel" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="pdk,linux,arm"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.8" remote="cfx" revision="jb-devel" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="pdk,linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="pdk,linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" groups="lpdk,inux,mips"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" groups="pdk,linux,x86"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux"  remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/runtime" name="platform/prebuilts/runtime"  groups="aosp44" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools"  groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="prebuilts_clang_darwin-x86_3.1" groups="pdk,darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="prebuilts_clang_darwin-x86_3.2" groups="pdk,darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="prebuilts_clang_darwin-x86_arm_3.3" groups="darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/darwin-x86/host/3.3" name="prebuilts_clang_darwin-x86_host_3.3" groups="darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/darwin-x86/mips/3.3" name="prebuilts_clang_darwin-x86_mips_3.3" groups="darwin,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="prebuilts_clang_darwin-x86_x86_3.3" groups="darwin,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="prebuilts_clang_linux-x86_3.1" groups="pdk,linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="prebuilts_clang_linux-x86_3.2" groups="pdk,linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="prebuilts_clang_linux-x86_arm_3.3" groups="linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/host/3.3" name="prebuilts_clang_linux-x86_host_3.3" groups="linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/mips/3.3" name="prebuilts_clang_linux-x86_mips_3.3" groups="linux,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/x86/3.3" name="prebuilts_clang_linux-x86_x86_3.3" groups="linux,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/clang/linux-x86/3.4" name="prebuilts_clang_linux-x86_3.4" remote="cfx-exp" revision="develop_34" groups="linux,x86" />
+  <project path="prebuilts/clang/linux-x86/3.5" name="prebuilts_clang_linux-x86_3.5" remote="cfx-exp" revision="develop_35" groups="linux,x86" />
+  <project path="prebuilts/devtools" name="prebuilts_devtools"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="prebuilts_gcc_darwin-x86_arm_arm-eabi-4.6" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_darwin-x86_arm_arm-eabi-4.7" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.6" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.7" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" name="prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.8" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="prebuilts_gcc_darwin-x86_host_headers" groups="pdk,darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="prebuilts_gcc_darwin-x86_host_i686-apple-darwin-4.2.1" groups="pdk,darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="prebuilts_gcc_darwin-x86_mips_mipsel-linux-android-4.6" groups="pdk,darwin,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="prebuilts_gcc_darwin-x86_mips_mipsel-linux-android-4.7" groups="pdk,darwin,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.8" name="prebuilts_gcc_darwin-x86_mips_mipsel-linux-android-4.8" groups="pdk,darwin,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="prebuilts_gcc_darwin-x86_x86_i686-linux-android-4.6" groups="pdk,darwin,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="prebuilts_gcc_darwin-x86_x86_i686-linux-android-4.7" groups="pdk,darwin,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.8" name="prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.8" groups="pdk,darwin,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" name="prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.8" groups="pdk,darwin,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.6" groups="pdk,linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" groups="pdk,linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" groups="pdk,linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.8" groups="pdk,linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="prebuilts_gcc_linux-x86_host_i686-linux-glibc2.7-4.4.3" groups="pdk,linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="prebuilts_gcc_linux-x86_host_i686-linux-glibc2.7-4.6" groups="pdk,linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.7-4.6" groups="pdk,linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.6" groups="pdk,linux,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" name="prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.7" groups="pdk,linux,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.8" name="prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.8" groups="pdk,linux,mips"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="prebuilts_gcc_linux-x86_x86_i686-linux-android-4.6" groups="pdk,linux,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="prebuilts_gcc_linux-x86_x86_i686-linux-android-4.7" groups="pdk,linux,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.7" groups="pdk,linux,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.8" groups="pdk,linux,x86"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.8" groups="pdk,linux,arm"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/gradle-plugin" name="prebuilts_gradle-plugin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/maven_repo/android" name="prebuilts_maven_repo_android"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/misc" name="prebuilts_misc" groups="pdk"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/ndk" name="prebuilts_ndk" groups="pdk"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="prebuilts_python_darwin-x86_2.7.5" groups="darwin"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="prebuilts_python_linux-x86_2.7.5" groups="linux"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/qemu-kernel" name="prebuilts_qemu-kernel" groups="pdk"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/runtime" name="prebuilts_runtime"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/sdk" name="prebuilts_sdk" groups="pdk"  remote="cfx-exp" revision="kk-devel" />
+  <project path="prebuilts/tools" name="prebuilts_tools" groups="pdk,tools"  remote="cfx-exp" revision="kk-devel" />
   <project path="sdk" name="android_sdk" />
   <project path="system/core" name="system_core" remote="vanir" revision="kk44-kingsize" groups="pdk" />
   <project path="system/extras" name="system_extras" remote="vanir" revision="kk44-kingsize" groups="pdk" />
