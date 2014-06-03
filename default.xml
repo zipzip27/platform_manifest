@@ -259,7 +259,7 @@
   <project path="external/javasqlite" name="android_external_javasqlite" />
   <project path="external/javassist" name="android_external_javassist" />
   <project path="external/jdiff" name="android_external_jdiff" />
-  <project path="external/jhead" name="android_external_jhead" groups="pdk" />
+  <project path="external/jhead" name="android_external_jhead" groups="pdk" remote="vanir" revision="kk44" />
   <project path="external/jmdns" name="android_external_jmdns" />
   <project path="external/jmonkeyengine" name="android_external_jmonkeyengine" />
   <project path="external/jpeg" name="external_jpeg" remote="vanir" revision="kk443" groups="pdk" />
